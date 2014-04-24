@@ -10,17 +10,19 @@ zstyle :compinstall filename '/home/jeremy/.zshrc'
 
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
-# End of lines configured by zsh-newuser-install
-alias ls='ls --color -AF'
-alias ll='ls -l'
-alias l='ls -al'
-alias nt='netstat -ltupn'
 
+export HISTFILE=~/.histfile
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+export CDPATH=~:~/Projects
+
+export LS_OPTIONS='--color=auto'
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -lAF'
+alias l='ls $LS_OPTIONS -lAF'
+alias ps='ps fauxwww'
+alias j='jobs'
 
 autoload -U colors && colors
 for COLOR in RED GREEN YELLOW BLUE MAGENTA CYAN BLACK WHITE; do
