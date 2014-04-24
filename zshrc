@@ -17,10 +17,12 @@ export SAVEHIST=10000
 
 export CDPATH=~:~/Projects
 
-export LS_OPTIONS='--color=auto'
-alias ls='ls $LS_OPTIONS'
-alias ll='ls $LS_OPTIONS -lAF'
-alias l='ls $LS_OPTIONS -lAF'
+alias ls='ls --color=auto'
+alias ll='ls -lAF'
+alias l='ll'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 alias ps='ps fauxwww'
 alias j='jobs'
 
