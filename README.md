@@ -3,8 +3,8 @@ To have hosts completion, put all your hosts in ~/.ssh/config or edit /etc/ssh/s
 HashKnownHosts yes
 ```
 
-Clone in $HOME directory, and use GNU stow to put the files in place:
+Clone in $HOME/stow/ directory, and use GNU stow to put the files in place:
 
 ```bash
-stow  -d ~/dotfiles -t ~ bash vim tmux
+stow  -d $HOME/stow -t $HOME/ dotfiles
 ```

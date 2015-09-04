@@ -1,0 +1,15 @@
+"*":
+  "exception-reporting":
+    userId: "b5081979-39cc-a4aa-4cf2-69494889bdd5"
+  welcome:
+    showOnStartup: false
+  "go-plus":
+    syntaxCheckOnSave: false
+    vetOnSave: false
+    lintOnSave: false
+  core: {}
+  editor:
+    invisibles: {}
+    fontFamily: "Droid sans mono"
+  "autocomplete-plus": {}
+  "one-dark-ui": {}

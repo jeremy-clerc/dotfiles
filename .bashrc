@@ -126,5 +126,17 @@ function __prompt_command() {
 
 export PROMPT_COMMAND=__prompt_command
 
-alias stow-sys="stow  -d /usr/local/stow/ -t /usr/local/"
-alias stow-dot="stow  -d ~/dotfiles -t ~"
+alias stow-sys="stow -d /usr/local/stow/ -t /usr/local/"
+alias stow-home="stow -d $HOME/stow/ -t $HOME/"
+
+export GOROOT=$HOME/go
+export GOPATH=$HOME/Projects/GO/gocode
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin
+
+export DEBEMAIL="jeremy@clerc.io"
+export DEBFULLNAME="Jeremy Clerc"
+
+function add_role {
+	mkdir -v -p $1/{files,templates,tasks,handlers,vars}
+}
+
