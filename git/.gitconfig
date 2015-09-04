@@ -1,0 +1,7 @@
+[user]
+	email = jeremy@clerc.io
+	name = Jeremy Clerc
+[alias]
+	st = status
+[push]
+	default = current
